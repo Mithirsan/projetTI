@@ -1,0 +1,53 @@
+@charset "utf-8"
+    
+/*HEADER*/    
+header {
+    height: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+header *{
+    font-family: Oregano, cursive;
+    font-size: 22px;
+    display: inline-block;
+    text-align: left;
+}
+
+header div {
+    display: inline-block;
+}
+
+header #logo *{
+    white-space: nowrap;
+    display: inline-block;
+    height: auto;
+}
+
+header #logo h1 {
+    margin: 0, 0, 0, 0;
+    display: inline-block;
+}
+   
+Header #menu ul *{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+Header #menu li {
+    float: left;
+    padding: 20px;
+}
+
+Header #menu li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+Header #menu li a:hover {
+    background-color: #111;
+}
