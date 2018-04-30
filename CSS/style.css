@@ -1,14 +1,20 @@
 @charset "utf-8"
     
+@font-face {
+    font-family: "pressStart";
+    src : url(../ressources/fontes/PressStart2P-Regular.ttf) format("truetype");
+}
+    
 /*HEADER*/    
 header {
-    height: 100px;
+    height: 60px;
     text-align: left;
     display: inline-block;
+    background-color: #C1C046;
 }
 
 header *{
-    font-family: Oregano, cursive;
+    font-family: pressStart, cursive;
     font-size: 22px;
     display: inline-block;
     text-align: left;
@@ -39,7 +45,7 @@ Header #menu ul *{
 
 Header #menu li {
     float: left;
-    padding: 20px;
+    padding: 5px;
 }
 
 Header #menu li a {
