@@ -7,15 +7,15 @@
     
 /*HEADER*/    
 header {
-    height: 60px;
+    height: 40px;
     text-align: left;
     display: inline-block;
     background-color: #C1C046;
 }
 
 header *{
-    font-family: pressStart, cursive;
-    font-size: 22px;
+    font-family: pressStart, sans-serif;
+    font-size: 16px;
     display: inline-block;
     text-align: left;
 }
@@ -34,26 +34,4 @@ header #logo h1 {
     margin: 0, 0, 0, 0;
     display: inline-block;
 }
-   
-Header #menu ul *{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-Header #menu li {
-    float: left;
-    padding: 5px;
-}
-
-Header #menu li a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-Header #menu li a:hover {
-    background-color: #111;
-}
