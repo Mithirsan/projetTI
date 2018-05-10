@@ -5,15 +5,15 @@ CREATE database project CHARACTER SET = 'utf8';
 USE project;
 
 CREATE TABLE IF NOT EXISTS users(
-username VARCHAR[20] NOT NULL,
-password VARCHAR[200] NOT NULL,
-mail VARCHAR[80] NOT NULL,
+username VARCHAR[32] NOT NULL,
+password VARCHAR[255] NOT NULL,
+mail VARCHAR[128] NOT NULL,
 birthDate DATE NOT NULL,
 firstName VARCHAR[40] NOT NULL,
 lastName VARCHAR[40] NOT NULL,
 image VARCHAR[50],
 phone VARCHAR[16],
-bankAccount CHAR[19],S
+bankAccount CHAR[34],
 isAdmin BOOLEAN NOT NULL DEFAULT FALSE,
 PRIMARY KEY(username, mail),
 ) engine = innodb;
