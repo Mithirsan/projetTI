@@ -8,6 +8,10 @@
         <script type="text/javascript" src="JS/popper.js"></script>
         <script type="text/javascript" src="JS/toottip.js"></script>
         <script type="text/javascript" src="JS/bootstrap.js"></script>
+        <script type="text/javascript" src="JS/pswd/password-score.js"></script>
+        <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
+        <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
+        <script type="text/javascript" src="JS/pswd/strength.js"></script>
         
         <!--FAVICON AND TITTLE -->
         <link rel="icon" type="image/png" href="ressources/images/logo.png" />
@@ -48,6 +52,26 @@
               <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
               <div class="invalid-feedback">
                 Please enter a valid email address.
+              </div>
+            </div>
+            <div class="mb-3 form-group">
+              <label for="pwd">Password</label>
+              <div>
+                <input type="password" class="form-control" id="pwd" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <label for="progress-bar-container">Strength</label>
+                <div class="" id="progress-bar-container"></div>
+              </div>
+              <div class="invalid-feedback">
+                Please enter a password.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="pwdc">Confirm password</label>
+              <input type="password" class="form-control" id="pwdc" placeholder="Confirm password" required>
+              <div class="invalid-feedback">
+                Please confirm your password.
               </div>
             </div>
         </form>
