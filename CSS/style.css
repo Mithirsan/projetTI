@@ -1,37 +1,16 @@
 @charset "utf-8"
     
-@font-face {
-    font-family: "pressStart";
-    src : url(../ressources/fontes/PressStart2P-Regular.ttf) format("truetype");
-}
-    
-/*HEADER*/    
-header {
-    height: 40px;
-    text-align: left;
-    display: inline-block;
-    background-color: #C1C046;
+
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
 }
 
-header *{
-    font-family: pressStart, sans-serif;
-    font-size: 16px;
-    display: inline-block;
-    text-align: left;
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-
-header div {
-    display: inline-block;
-}
-
-header #logo *{
-    white-space: nowrap;
-    display: inline-block;
-    height: auto;
-}
-
-header #logo h1 {
-    margin: 0, 0, 0, 0;
-    display: inline-block;
-}
-
