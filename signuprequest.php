@@ -1,7 +1,7 @@
 <?php
 
 	$servername = 'localhost';
-	$db = 'project';
+	$db = 'homesweethome';
 
 	//Récupération de la bdd
 	try {
