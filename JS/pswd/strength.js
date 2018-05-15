@@ -4,6 +4,10 @@ $(document).ready(function() {
         container: $('#progress-bar-container')
     });
     
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+    
     $('#pwdc').change(function () {
         var password = $("#pwd").val();
         var confirmPassword = $("#pwdc").val();
