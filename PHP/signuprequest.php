@@ -1,17 +1,6 @@
 <?php
 
-	$servername = 'localhost';
-	$db = 'homesweethome';
-
-	//Récupération de la bdd
-	try {
-			$bdd = new PDO('mysql:host=$servername;dbname=$db', 'root', '');
-			$bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		}
-	catch(PDOException $e)
-	{
-		echo 'Connection failed: ' . $e->getMessage() .'<br/>';
-	}
+	include "../admin.php";
 	
 	//Récupération des données du formulaire
 	$username = $_POST('username');

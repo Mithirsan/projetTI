@@ -20,7 +20,7 @@
         
     </HEAD>
     <BODY>
-        <?php include 'PHP/home.php'; ?>
+        <?php include 'home.php'; ?>
         <div id="content">
         
         </div>

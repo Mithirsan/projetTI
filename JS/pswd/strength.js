@@ -11,14 +11,13 @@ $(document).ready(function() {
     $('#pwdc').change(function () {
         var password = $("#pwd").val();
         var confirmPassword = $("#pwdc").val();
-        alert('test');
         if (password != confirmPassword) {
-            $('#pwdc').addClass("error");
-            alert("not same");
+            $('#pwdc').addClass("has-error");
             return false;
+        } else {
+            $('#pwdc').addClass("success");
+            $('#signup').prop('disabled', false);
         }
-        $('#pwdc').addClass("success");
-        $('#signup').prop('disabled', false);
         return true;
     });
 
