@@ -22,7 +22,7 @@
 	$email = $_POST('email');
 	$birthDate = $_POST('date');
 
-	if($_POST('phone'){
+	if($_POST('phone')){
 		$phone = $_POST('phone');
 		
 		//requête si phone

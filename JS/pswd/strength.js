@@ -13,11 +13,11 @@ $(document).ready(function() {
         var confirmPassword = $("#pwdc").val();
         alert('test');
         if (password != confirmPassword) {
-            $('#pwdc').addClass("has-error");
+            $('#pwdc').addClass("error");
             alert("not same");
             return false;
         }
-        $('#pwdc').addClass("has-success");
+        $('#pwdc').addClass("success");
         $('#signup').prop('disabled', false);
         return true;
     });

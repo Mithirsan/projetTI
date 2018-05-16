@@ -20,7 +20,7 @@
         
     </HEAD>
     <BODY>
-        <?php include 'PHP/navbar.php'; ?>
+        <?php include 'PHP/home.php'; ?>
         <div id="content">
         
         </div>

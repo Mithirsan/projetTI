@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include "../navbar.php" ?>
 <HTML lang="en">
     <HEAD>
         <meta charset="utf-8">
@@ -91,7 +92,7 @@
                 <input type="text" class="form-control bfh-phone" data-country="countries_phone" style="">
             </div>
             <div class="mb-3">
-                <input type="submit" class="btn" id="signup" name="signup" disabled>
+                <input type="submit" class="btn" id="signup" value="Sign UP" name="signup" disabled>
             </div>
         </form>
         </div>
