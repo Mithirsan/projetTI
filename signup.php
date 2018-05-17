@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<HEAD>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" >
+    <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="JS/popper.js"></script>
+    <script type="text/javascript" src="JS/tooltip.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+    <script type="text/javascript" src="JS/pswd/password-score.js"></script>
+    <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
+    <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
+    <script type="text/javascript" src="JS/pswd/strength.js"></script>
+
+    <!--FAVICON AND TITTLE -->
+    <link rel="icon" type="image/png" href="ressources/images/logo.png" />
+    <title>SignUp</title>
+</HEAD>
+<BODY>
+    <?php include "navbar.php" ?>
+=======
 <HTML lang="en">
     <HEAD>
         <meta charset="utf-8">
@@ -23,6 +44,7 @@
     </HEAD>
   
 <BODY include "navbar.php" >
+>>>>>>> a247b88ed1717dd357580364a759dfdee4532997
     <div class="col-md-8 order-md-1">
     <form class="needs-validation" name="SignUp" action="PHP/signuprequest.php" method="post">
         <div class="row">
