@@ -12,7 +12,7 @@
         
         
         <!--OUR FILES -->
-<!--        <link rel="stylesheet" type="text/css" href="CSS/style.css" > -->
+       <link rel="stylesheet" type="text/css" href="CSS/style.css" >
         <script type="text/javascript" src="JS/script.js"></script>
         
         <!--FAVICON AND TITTLE -->
