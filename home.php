@@ -24,3 +24,42 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+
+<div class="container" id="popular">
+      <hr class="hr-text" data-content="Suggested Destinations">
+</div>
+
+<div class="container">
+    <div class="row text-center text-lg-left" >
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12" >
+            <a href="#" class="d-block mb-4">
+                <img class="img-fluid rounded" src="ressources/images/popularcity/paris.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
