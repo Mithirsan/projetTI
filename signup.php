@@ -1,37 +1,11 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <HTML lang="en">
     <HEAD>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" >
         <script type="text/javascript" src="JS/jquery-3.3.1.js">
-		
-			$(document).ready(function(e) {
-				$('#submit').click(function(){
-				var name = $('#name').val();
-				var email = $('#email').val();
-				var password = $('#password').val();
-				var phone = $('#phone').val();
-				var firstName = $('#firstName').val();
-				var lastName = $('#lastName').val();
-				var birthDate = $('#birthDate').val;
-				
-					$ajax({
-						type:'POST',
-						data:{name:name,email:email,password:password,gender:gender},
-						url:"insert.php", //php page URL where we post this data to save in databse
-						success: function(result){
-						
-							$('#alert').show();
-							
-							$('#show').html(result);
-								
-					
-						}
-					})
-				});
-			});
+
 		
 		
 		</script>
@@ -42,65 +16,13 @@
         <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
         <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
         <script type="text/javascript" src="JS/pswd/strength.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         
         <!--FAVICON AND TITTLE -->
         <link rel="icon" type="image/png" href="ressources/images/logo.png" />
         <title>SignUp</title>
     </HEAD>
-    <BODY>
-        <div class="col-md-8 order-md-1">
-        <form class="needs-validation" name="SignUp" action="signuprequest.php" method="post">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required name="firstName">
-                <div class="invalid-feedback">
-                  First name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required name="lastName">
-                <div class="invalid-feedback">
-                  Last name is required.
-                </div>
-              </div>
-            </div>
-            <div cmass="mb-3">
-                <label for="date">Date of birth</label>
-                <input type="date" id="date" required name="date" min="1930-01-01">
-            </div>
-            <div class="mb-3">
-              <label for="username">Username</label>
-              <div class="input-group">
-                <input type="text" class="form-control" id="username" placeholder="Username" required name="username">
-                <div class="invalid-feedback" style="width: 100%;">
-                  Username is required, maybe this username is already used.
-                </div>
-              </div>
-            </div>
-=======
-<?php include "navbar.php" ?>
-<HEAD>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" >
-    <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="JS/popper.js"></script>
-    <script type="text/javascript" src="JS/tooltip.js"></script>
-    <script type="text/javascript" src="JS/bootstrap.js"></script>
-    <script type="text/javascript" src="JS/pswd/password-score.js"></script>
-    <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
-    <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
-    <script type="text/javascript" src="JS/pswd/strength.js"></script>
->>>>>>> refs/remotes/origin/master
-
-    <!--FAVICON AND TITTLE -->
-    <link rel="icon" type="image/png" href="ressources/images/logo.png" />
-    <title>SignUp</title>
-</HEAD>
-<BODY>
+  
+<BODY include "navbar.php" >
     <div class="col-md-8 order-md-1">
     <form class="needs-validation" name="SignUp" action="PHP/signuprequest.php" method="post">
         <div class="row">
@@ -122,7 +44,7 @@
         <div cmass="mb-3">
             <label for="date">Date of birth</label><span> *</span>
             <div class='input-group date' id='datetimepicker1'>
-                <input type='date' class="form-control" />
+                <input type='date' class="form-control" name = "birthDate" id = "birthDate" value="<?php echo date('Y-m-d'); ?>"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -135,10 +57,9 @@
             <div class="invalid-feedback" style="width: 100%;">
               Username is required, maybe this username is already used.
             </div>
-<<<<<<< HEAD
+
             <div class="mb-3">
                 <button type="submit" class="btn" id="submit" name="submit">
-=======
           </div>
         </div>
 
@@ -152,7 +73,7 @@
         <div class="mb-3 form-group">
           <label for="pwd">Password</label><span> *</span>
           <div>
-            <input type="password" class="form-control" id="pwd" placeholder="Password" required name="password">
+            <input type="password" class="form-control" id="password" placeholder="Password" required name="password">
           </div>
           <div class="form-group">
             <label for="progress-bar-container">Strength</label>
@@ -173,13 +94,12 @@
             <label for="countries_phone">Country</label>
             <select id="countries_phone" class="form-control bfh-countries" data-country="US"></select>
             <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
->>>>>>> refs/remotes/origin/master
             </div>
             <label for="phoneNum">Phone Number</label>
             <input type="text" class="form-control bfh-phone" data-country="countries_phone" style="">
         </div>
         <div class="mb-3">
-            <input type="submit" class="btn" id="signup" value="Sign UP" name="signup" disabled>
+            <input type="submit" class="btn" id="submit" value="Sign Up" name="submit" >
         </div>
     </form>
     </div>
