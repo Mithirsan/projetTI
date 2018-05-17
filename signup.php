@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <HEAD>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,6 +19,32 @@
 </HEAD>
 <BODY>
     <?php include "navbar.php" ?>
+=======
+<HTML lang="en">
+    <HEAD>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" >
+        <script type="text/javascript" src="JS/jquery-3.3.1.js">
+
+		
+		
+		</script>
+        <script type="text/javascript" src="JS/popper.js"></script>
+        <script type="text/javascript" src="JS/toottip.js"></script>
+        <script type="text/javascript" src="JS/bootstrap.js"></script>
+        <script type="text/javascript" src="JS/pswd/password-score.js"></script>
+        <script type="text/javascript" src="JS/pswd/password-score-options.js"></script>
+        <script type="text/javascript" src="JS/bootstrap-strength-meter.js"></script>
+        <script type="text/javascript" src="JS/pswd/strength.js"></script>
+        
+        <!--FAVICON AND TITTLE -->
+        <link rel="icon" type="image/png" href="ressources/images/logo.png" />
+        <title>SignUp</title>
+    </HEAD>
+  
+<BODY include "navbar.php" >
+>>>>>>> a247b88ed1717dd357580364a759dfdee4532997
     <div class="col-md-8 order-md-1">
     <form class="needs-validation" name="SignUp" action="PHP/signuprequest.php" method="post">
         <div class="row">
@@ -39,7 +66,7 @@
         <div cmass="mb-3">
             <label for="date">Date of birth</label><span> *</span>
             <div class='input-group date' id='datetimepicker1'>
-                <input type='date' class="form-control" />
+                <input type='date' class="form-control" name = "birthDate" id = "birthDate" value="<?php echo date('Y-m-d'); ?>"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -52,6 +79,9 @@
             <div class="invalid-feedback" style="width: 100%;">
               Username is required, maybe this username is already used.
             </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn" id="submit" name="submit">
           </div>
         </div>
 
@@ -65,7 +95,7 @@
         <div class="mb-3 form-group">
           <label for="pwd">Password</label><span> *</span>
           <div>
-            <input type="password" class="form-control" id="pwd" placeholder="Password" required name="password">
+            <input type="password" class="form-control" id="password" placeholder="Password" required name="password">
           </div>
           <div class="form-group">
             <label for="progress-bar-container">Strength</label>
@@ -91,7 +121,7 @@
             <input type="text" class="form-control bfh-phone" data-country="countries_phone" style="">
         </div>
         <div class="mb-3">
-            <input type="submit" class="btn" id="signup" value="Sign UP" name="signup" disabled>
+            <input type="submit" class="btn" id="submit" value="Sign Up" name="submit" >
         </div>
     </form>
     </div>
