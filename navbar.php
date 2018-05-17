@@ -22,7 +22,7 @@
 
 <?php
 
-if($_SESSION['connected']=1){
+if((isset($_SESSION['connected']))){
     
 echo   ' <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
         <div class="container">
