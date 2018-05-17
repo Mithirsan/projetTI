@@ -9,7 +9,6 @@
         <script type="text/javascript" src="JS/tooltip.js"></script>
         <script type="text/javascript" src="JS/bootstrap.js"></script>
         
-        
         <!--OUR FILES -->
 <!--        <link rel="stylesheet" type="text/css" href="CSS/style.css" > -->
         <script type="text/javascript" src="JS/script.js"></script>

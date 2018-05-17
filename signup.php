@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include "navbar.php" ?>
 <HEAD>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,6 +17,7 @@
     <title>SignUp</title>
 </HEAD>
 <BODY>
+    <?php include "navbar.php" ?>
     <div class="col-md-8 order-md-1">
     <form class="needs-validation" name="SignUp" action="PHP/signuprequest.php" method="post">
         <div class="row">
